@@ -83,62 +83,7 @@
     <div id="nav-search-exit" title="Exit search">✕</div>
     <input type="text" id="nav-search-input" placeholder="Search">
     <ul id="search-results-container"></ul>
-    
-    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-    <script>
-      var searchjson = '[ \
-        \
-          { \
-            "title"    : "Sample blog post", \
-            "category" : "test", \
-            "url"      : "/ada-project-teambadass/2020-02-28-test-markdown/", \
-            "date"     : "February 28, 2020" \
-          }, \
-        \
-          { \
-            "title"    : "Flake it till you make it", \
-            "category" : "bookstest", \
-            "url"      : "/ada-project-teambadass/2020-02-26-flake-it-till-you-make-it/", \
-            "date"     : "February 26, 2020" \
-          }, \
-        \
-        \
-          { \
-            "title"    : "About the Project", \
-            "category" : "page", \
-            "url"      : "/ada-project-teambadass/404.html", \
-            "date"     : "January 1, 1970" \
-          }, \
-        \
-          { \
-            "title"    : "About the project", \
-            "category" : "page", \
-            "url"      : "/ada-project-teambadass/about/", \
-            "date"     : "January 1, 1970" \
-          }, \
-        \
-          { \
-            "title"    : "Team Badass", \
-            "category" : "page", \
-            "url"      : "/ada-project-teambadass/", \
-            "date"     : "January 1, 1970" \
-          }, \
-        \
-          { \
-            "title"    : "The Recipe For A Movie&#39;s Success 🎬", \
-            "category" : "page", \
-            "url"      : "/ada-project-teambadass/", \
-            "date"     : "January 1, 1970" \
-          }, \
-        \
-          { \
-            "title"    : "Tag Index", \
-            "category" : "page", \
-            "url"      : "/ada-project-teambadass/tags/", \
-            "date"     : "January 1, 1970" \
-          } \
-        \
-      ]';
+  
       searchjson = JSON.parse(searchjson);
 
       var sjs = SimpleJekyllSearch({
@@ -189,11 +134,27 @@ Our journey through this blog will unravel these layers. We will explore how gen
         <hr/>
 
         <h2 id="Part1">Quantification of gender disparity in cinema</h2>
-        <p>Add content <br>
-        TEST graph
+        <p> The existing gender disparity can be observed on the actor population. Based the actors population of various movies from different genres, dates and nationalities, 
+          it was observed a uneven proportion of actresses in absolute number.<br>
+          (Graph showing number of actresses vs number of actors)</p>
+
+        <p> The hypothesis was brought that the gender disparity could have evolved over the time with 
+          the evolution of women's rights and their role in the society. <br>
+          To be sure we have studied the evolution of the actor population by gender over the years and we have observed
+          that even if the overall population of actors has increased, the actresses stayed a minority. Even more, it was observed that 
+          their rate of population increase was actually less important than the one of the actors.
+        <br>
+         (Provisory  graph)
         </p>
         <iframe src="assets/plot/ActorsOverYears.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+        <p> To understand the reason of this disparity, several movies' features were studied and it appeared after different analysis that
+          none of them had a significant impact on the gender disparity. <br>
+          (Add different graphs with the influence of the other features)<br>
+          So is the gender disparity really intrinsec to the cinema disparity or does it come from influences beyond the movies such as the 
+          choice of the tropes? How do the tropes influence the gender disparity in the movies?
+          </p>
         <hr />
+
 
         <h2 id="Part 2">Genderness of tropes</h2>
         <p>In the first part of our exploration, we will delve into the world of career longevity in cinema. We will use survival analysis to understand how gender influences the arc of a career in the film industry. Are the disparities significant enough to impact the duration and success of an actor’s career? </p>
@@ -201,22 +162,9 @@ Our journey through this blog will unravel these layers. We will explore how gen
         <hr />
 
         <h3 id="Subpart2.1"> The representation of gendred tropes: </h3>
+        <hr/>
 
-        <h4 id="Subpart2.1.1">Accross the genres</h4>
-        <p>Add content </p>
-      <!--
-        <iframe src="assets/plot/" width="750px" height="530px" frameborder="0" position="relative">Some plot</iframe>
-      -->
-      <hr />
-        <h4 id="Subpar21.1.2">Over the decades</h4>
-        <p>Add content</p>
-        
-        <h3 id="Subpart2.2">The correlation between the nature of tropes and the genderness</h3>
-        <p>Add content </p>
-        <hr />
-
-        <p><img src="assets/img/thumb.png" height="600px" width="600px" class="center" /></p>
-
+        <h2 id="Part 3">Analysis of the gender impact on actors' career longevity</h2>
       </div>
     </div>
   </div>
@@ -235,7 +183,7 @@ Our journey through this blog will unravel these layers. We will explore how gen
           &nbsp;&bull;&nbsp;        
           2023
           &nbsp;&bull;&nbsp;
-          <a title="Edit this page on GitHub" href="https://github.com/kevinxyc1/ada-project-teambadass/edit/master/index.md" class="text_muted">Edit page</a>
+          <a title="Edit this page on GitHub" href="https://github.com/juliette75700/Gender-Evolution" class="text_muted">Edit page</a>
         
 
         </p>
