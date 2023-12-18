@@ -4,7 +4,7 @@ Causal Analysis of Gender vs Rating
 
 What makes people tick?
 
-In this section of the study, we are trying to find what influences the ratings that people give for a movie. Since the ultimate goal of this study is to show the role that each gender has in the cinema, after this section, we will try to give a conclusive on in the question “Is the gender affecting the ratings that people give to movies in IMBD?” To do that, first we had to find a way to quantify the aspect of gender in a movie. To do that, we used the fraction of the female actors in the cast of the movie, i.e. how many of the actors are female in the movie in respect to the whole cast of the movie. Moreover, for a conclusive result, we needed to check the other movie characteristics that affect the ratings that people give, like the movie runtime, genre and more.
+In this section of the study, we are trying to find what influences the ratings that people give for a movie. The ultimate goal of this part of the study is to show if the gender plays a role in the ratings, to see if the difference in gender represantation in the cinema has some ground in terms of ratings. So after this section, we will try to give a conclusive on in the question “Does the gender affect the ratings that people give to movies in IMBD?”. To do that, first we had to find a way to quantify the aspect of gender in a movie. To do that, we used the fraction of the female actors in the cast of the movie, i.e. how many of the actors are female in the movie in respect to the whole cast of the movie. Moreover, for a conclusive result, we needed to check the other movie characteristics that affect the ratings that people give, like the movie runtime, genre and more.
 
 What do people vote?
 
