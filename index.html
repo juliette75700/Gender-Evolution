@@ -158,13 +158,58 @@
         <p> To understand the reason of this disparity, several movies' features were studied such as the nationality or the movie run time. 
           It appeared that no conclusion could be taken out from those observations because no conclusive trend appeared for the nationality
           (the actresses are always a minority in the movies) 
-          and because of too big disparity in the results of the movie runtime. <br>
-          <iframe src="assets/plot/Actresses_per_country.html" width="750px" height="530px" frameborder="0" position="relative"> plot</iframe>
-          <iframe src="assets/plot/Actresses_runtime.html" width="750px" height="530px" frameborder="0" position="relative"> plot</iframe>
-
-          In the end, is the gender disparity really intrinsec to the cinema or does it come from some influences beyond the movies such as the 
-          choice of the tropes? How do the tropes influence the gender disparity in the movies?
-          </p>
+          and because of too big disparity in the results of the movie runtime.
+        </p>
+        <script>
+          function showFrame(frameId) {
+            // Get all iframes with the toggle-frame class
+            var frames = document.getElementsByClassName('toggle-frame');
+          
+            // Hide all iframes with the toggle-frame class
+            for (var i = 0; i < frames.length; i++) {
+              frames[i].style.display = 'none';
+            }
+          
+            // Show the selected iframe
+            var frame = document.getElementById(frameId);
+            frame.style.display = 'block';
+          }
+        </script>
+          
+          <!-- Create the buttons -->
+        <p><button class="button" style="margin: 8px 0; width: 20%;
+              display: inline-block;
+              padding: 7px 10px;
+              margin-left: 130px; margin-right: 5px;
+              background-color: #fff; /* White background */
+              color: #000; /* Black text color */
+              border: 2px solid #525252; /* Black borders */
+              border-radius: 4px;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 500;"
+          onclick="showFrame('nationality')">Nationality
+        </button>
+        <button class="button"style="margin: 8px 0; width: 20%;
+              display: inline-block;
+              padding: 7px 10px;
+              margin-left: 130px; margin-right: 5px;
+              background-color: #fff; /* White background */
+              color: #000; /* Black text color */
+              border: 2px solid #525252; /* Black borders */
+              border-radius: 4px;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 500;" 
+              onclick="showFrame('runtime')">Runtime
+        </button>
+        </p>
+          
+        <!-- Create the iframes -->
+        <iframe class="toggle-frame" src="assets/plot/Actresses_per_country.html" width="750px" height="590px" frameborder="0" position="relative" id="nationality" style="display: block;">nationality</iframe>
+        <iframe class="toggle-frame" src="assets/plot/Actresses_runtime.html" width="750px" height="590px" frameborder="0" position="relative" id="runtime" style="display: none;">runtime</iframe>
+        
+        In the end, is the gender disparity really intrinsec to the cinema or does it come from some influences beyond the movies such as the 
+        choice of the tropes? How do the tropes influence the gender disparity in the movies?
+        </p>
       
         <hr />
 
@@ -177,15 +222,214 @@
         <hr/>
 
         <h2 id="Part 3">Analysis of the gender impact on actors' career longevity</h2>
-        
-        <h2 id="Part 4">What make people tick?</h2>
-        <p>In this part of our exploration, we will try to figure out what is making people give high ratings to movies and if the gender (namely the fraction of female actors in a movie) can influence that</p>
-        <h4 id="Subpart4.1">Characteristics of a movie that influence the Ratings</h4>
+        <hr/>
+        <h2 id="Part 4">The influence of the gender over the movie rating</h2>
+        <hr/>    
+        <h3 id="Subpart4.1">What makes people tick</h3>
+
+        <p>In this section of the study, we are trying to find what influences the ratings that people give for a movie. 
+          The ultimate goal of this part of the study is to show if the gender plays a role in the ratings, to see if the difference in gender 
+          representation in the cinema has some ground in terms of ratings. So after this section, we will try to give a conclusive on in the question 
+          “Does the gender affect the ratings that people give to movies in IMBD?”. 
+          To do that, first we had to find a way to quantify the aspect of gender in a movie. 
+          To do that, we used the fraction of the female actors in the cast of the movie, i.e. how many of the actors are female in the movie in respect to the whole cast of the movie. 
+          Moreover, for a conclusive result, we needed to check the other movie characteristics that affect the ratings that people give, like the movie runtime, genre and more. </p>    
         <hr />
 
-        <h3 id="Subpart4.1.1"> The representation of gendred tropes: </h3>
+        <h3 id="Subpart4.1">What do people vote?</h3>
+        <p>Before diving deep into what influences the ratings, lets see first what people vote in general and how it changed across the years. 
+          This can give us some perspective on all the exciting cases that follow. Clearly visualized on the graph that follows, is that most of the votes are between 5-7 rating, 
+          showing that people tend to give a rating above average, or thinking differently, the average for a movie is a rating of 6.3.
+          But was that always the case? Let’s see is the average rating for the movies made each year changes along the years. 
+          We can distinguish two parts of the changes in rating. The first part show that in the start of the 20th century, up until around 1928, the average rating of the movies was increasing. 
+          The Pearson and Spearman correlations that give a p-value lower than 0.05 reinforce this conclusion. 
+          However, the high 95% Confidence intervals suggest that the data are not that reliable. Then after 1928, the ratings start to decline as the years go by with negative significant correlation, with the data being more reliable.</p>
         <hr/>
-      </div>
+        <script>
+          function showFrame(frameId) {
+            // Get all iframes with the toggle-frame class
+            var frames = document.getElementsByClassName('toggle-frame');
+          
+            // Hide all iframes with the toggle-frame class
+            for (var i = 0; i < frames.length; i++) {
+              frames[i].style.display = 'none';
+            }
+          
+            // Show the selected iframe
+            var frame = document.getElementById(frameId);
+            frame.style.display = 'block';
+          }
+        </script>
+          
+          <!-- Create the buttons -->
+        <p><button class="button" style="margin: 8px 0; width: 20%;
+              display: inline-block;
+              padding: px 10px;
+              margin-left: 130px; margin-right: 5px;
+              background-color: #fff; /* White background */
+              color: #000; /* Black text color */
+              border: 2px solid #525252; /* Black borders */
+              border-radius: 4px;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 500;"
+          onclick="showFrame('rat_dist')">Rating distribution
+        </button>
+        <button class="button"style="margin: 8px 0; width: 20%;
+              display: inline-block;
+              padding: 7px 10px;
+              margin-left: 130px; margin-right: 5px;
+              background-color: #fff; /* White background */
+              color: #000; /* Black text color */
+              border: 2px solid #525252; /* Black borders */
+              border-radius: 4px;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 500;" 
+              onclick="showFrame('line_rat_year')">Average rating over the years
+        </button>
+        </p>
+         
+        <iframe class="toggle-frame" src="assets/plot/rat_dist.html" width="750px" height="530px" frameborder="0" position="relative" id="rat_dist" style="display: block;">rat_dist</iframe>
+        <iframe class="toggle-frame" src="assets/plot/line_rat_year.html" width="750px" height="530px" frameborder="0" position="relative" id="line_rat_year" style="display: none;">line_rat_year</iframe>
+        
+        <p>Now that we saw an overview of the ratings, let’s see some other parameters.</p>
+        
+        <h3 id="Subpart4.2">What are the other parameters that affect the ratings?</h3>
+        <p>Now that we saw an overview of the ratings, let’s see some other parameters. 
+          First, we will see how the runtime of the movie affects the ratings. 
+        </p>
+
+        <h4 id="Subpart4.2.1">Runtime</h4>
+        <p>Do people generally prefer movies that run for a long time or do they prefer short movies, or are they indifferent to the duration of the movie?  
+        Well, you can always find the answer here! For the most reliable data, for movies from around 60 to 200 minutes of runtime there can be seen a slight 
+        but statistically significant increase in the rating as the runtime goes up. 
+        It seems either that people like longer movies or if a movie is longer it is most likely to be better! </p>
+        <iframe src="assets/plot/line_rat_runtime.html" width="750px" height="530px" frameborder="0" position="relative">Runtime plot</iframe>
+
+        <h4 id="Subpart4.2.2">Average age of the cast</h4>
+        <p> Let’s now look at something else, the average age of the cast. Do people give higher ratings to movies that employ and cast older people? Or a younger, 
+        more vibrant and livelier cast is the way to go in order to get the people to give a good vote? With one quick look it seems that it does not actually matter.
+        Both the Pearson and Spearman correlation statistics give a p-value around 0.5 which can help us reject the null hypothesis that the average age of the cast of the movie and the rating it gets are correlated.</p>
+        <iframe src="assets/plot/dist_rat_age.html" width="750px" height="530px" frameborder="0" position="relative">Age plot</iframe>
+
+        <h4 id="Subpart4.2.3">Genres, Languages and Country</h4>
+        <p>Let’s continue to some distributions. Below we can see the distributions of the ratings for each genre and for languages and countries of the movies 
+        (we show countries and languages that more than 50 movies were made in each country and language). If there is a lot of variation between the distributions of the different categories for all these three variables, 
+        we can assume naively that there is some influence of the variable to the average rating. We can see that there is some variation of the average of the ratings, between 6 to 8, for the genres, 6 to 7.5 for languages and 6 to 6.7 for the countries. 
+        Therefore, we naively say that the genre and the language of the movie can influence the rating of the movie. </p>
+       
+        <script>
+          function showFrame(frameId) {
+            // Get all iframes with the toggle-frame class
+            var frames = document.getElementsByClassName('toggle-frame');
+          
+            // Hide all iframes with the toggle-frame class
+            for (var i = 0; i < frames.length; i++) {
+              frames[i].style.display = 'none';
+            }
+          
+            // Show the selected iframe
+            var frame = document.getElementById(frameId);
+            frame.style.display = 'block';
+          }
+        </script>
+          
+          <!-- Create the buttons -->
+          <p><button class="button" style="margin: 8px 0; width: 20%;
+                    padding: 7px 10px;
+                    margin-left: 130px; margin-right: 5px;
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text color */
+                    border: 2px solid #525252; /* Black borders */
+                    border-radius: 4px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 500;" onclick="showFrame('bar_rat_genre')">Genre
+              </button>
+              <button class="button" style="width: 20%; margin-right: 5px;
+                    padding: 7px 10px;
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text color */
+                    border: 2px solid #525252; /* Black borders */
+                    border-radius: 4px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 500;" onclick="showFrame('bar_rat_country')">Country
+              </button>
+              <button class="button" style="width: 20%;
+                    padding: 7px 10px;
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text color */
+                    border: 2px solid #525252; /* Black borders */
+                    border-radius: 4px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 500;" onclick="showFrame('bar_rat_lang')">Language
+               </button>
+          </p>
+        
+        <iframe class="toggle-frame" src="assets/plot/bar_rat_genre.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_genre" style="display: block;">bar_rat_genre</iframe>
+        <iframe class="toggle-frame" src="assets/plot/bar_rat_country.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_country" style="display: none;">bar_rat_country</iframe>
+        <iframe class="toggle-frame" src="assets/plot/bar_rat_lang.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_lang" style="display: none;">bar_rat_langr</iframe>
+
+      <h3 id="Subpart4.3">The influence of the gender</h3>
+          
+      <p>Finally, it is time to address the elephant in the room, does gender play a role in the ratings that people give to the movies. 
+        As mentioned above, we are using the fraction of female actors in the movie. The naïve analysis shows that that there is a small but significant negative correlation between 
+        the female fraction of actors in the movie and the average rating. We can also see again that the female fraction of actors is generally below 0.35. 
+        This could be for a lot of reasons, for example people might like genres or that are best suited for male actors, or these genres are more carefully made. </p>
+      <iframe src="assets/plot/line_rat_frac_female.html" width="750px" height="530px" frameborder="0" position="relative">Frac female</iframe>
+
+      <h4 id="Subpart4.1"> Is this really the case?</h4>
+      <p>Until now, we were looking at these cases naively and saw that many confounders can affect the average rating of a movie. To make sure that the fraction of female actors affects the average rating, we need to isolate its effect, 
+        that is we are going to perform a causal analysis. To do that we use a treatment and a control group. The treatment group is defined as the movies that have more female than male actors in their cast, whereas the control group is the opposite. 
+        So, we used propensity score matching for the above confounders that showed some correlation with the average rating. 
+        After matching we can see that the distribution of the average rating between the two groups is very similar, with the treatment group (more females than males in a movie) 
+        having a bit more probability to have around 4.5-7 and the control group a bit more probability above 7. The correlation statistics show a in the end that the fraction of female actors in a movie have little to no correlation to the average rating.
+      </p>
+       
+      <script>
+        function showFrame(frameId) {
+          // Get all iframes with the toggle-frame class
+          var frames = document.getElementsByClassName('toggle-frame');
+        
+          // Hide all iframes with the toggle-frame class
+          for (var i = 0; i < frames.length; i++) {
+            frames[i].style.display = 'none';
+          }
+        
+          // Show the selected iframe
+          var frame = document.getElementById(frameId);
+          frame.style.display = 'block';
+        }
+      </script>
+        
+        <!-- Create the buttons -->
+        <p><button class="button" style="margin: 8px 0; width: 30%;
+                  display: inline-block;
+                  padding: 7px 10px;
+                  margin-left: 130px; margin-right: 5px;
+                  background-color: #fff; /* White background */
+                  color: #000; /* Black text color */
+                  border: 2px solid #525252; /* Black borders */
+                  border-radius: 4px;
+                  font-family: 'Open Sans', sans-serif;
+                  font-weight: 500;" onclick="showFrame('dist_rat_treat_control')">Distribution of the two groups
+            </button>
+            <button class="button" style="margin: 8px 0; width: 40%;
+                  display: inline-block;
+                  padding: 7px 10px;
+                  background-color: #fff; /* White background */
+                  color: #000; /* Black text color */
+                  border: 2px solid #525252; /* Black borders */
+                  border-radius: 4px;
+                  font-family: 'Open Sans', sans-serif;
+                  font-weight: 500;" onclick="showFrame('line_rat_female_matched')"> Average actress fraction over the raiting
+            </button>
+        </p>
+      
+      <iframe class="toggle-frame" src="assets/plot/dist_rat_treat_control.html" width="750px" height="530px" frameborder="0" position="relative" id="dist_rat_treat_control" style="display: block;">dist_rat_treat_control</iframe>
+      <iframe class="toggle-frame" src="assets/plot/line_rat_female_matched.html" width="750px" height="530px" frameborder="0" position="relative" id="line_rat_female_matched" style="display: none;">line_rat_female_matched</iframe>
+
+      
+    
+    </div>
     </div>
   </div>
 
