@@ -57,18 +57,12 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Button 2</a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/Gender-Evolutions/button2_option.md">Option</a>
+          <a class="nav-link dropdown-toggle expanded-dropdown-button" sytle="padding: 30px 30px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+          <div class="dropdown-menu dropdown-menu-right"  aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://github.com/epfl-ada/ada-2023-project-adaknow/tree/main" target="_blank">Method and ressources</a>
           </div>
         </li>
-          
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Button 3</a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/Gender-Evolution/button3_option.md">Option</a>
-          </div>
-        </li>
+       
           
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
@@ -143,7 +137,7 @@
         <p> The existing gender disparity can be observed on the actor population. Based the actors population of various movies from different genres, dates and nationalities, 
           it was observed a uneven proportion of actresses in absolute number.<br>
           </p>
-          <iframe src="assets/plot/Prop_actresses.html" width="750px" height="530px" frameborder="0" position="relative">Proportion gender actor population plot</iframe>
+          <iframe src="assets/plot/Prop_actresses.html" width="750px" height="630px" frameborder="0" position="relative">Proportion gender actor population plot</iframe>
 
         <h4>This is just a question of the times, right? </h4>
         <p> The hypothesis was brought that the gender disparity could have evolved over the time with 
@@ -154,7 +148,7 @@
         <br>
          
         </p>
-        <iframe src="assets/plot/ActorsOverYears.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+        <iframe src="assets/plot/ActorsOverYears.html" width="830px" height="630px" frameborder="0" position="relative">Genre plot</iframe>
         <h4>The influence of the movies characteristics on gender disparities</h4>
         <p> To understand the reason of this disparity, several movies' features were studied such as the nationality or the movie run time. 
           It appeared that no conclusion could be taken out from those observations because no conclusive trend appeared for the nationality
@@ -290,7 +284,7 @@
         </p>
          
         <iframe class="toggle-frame" src="assets/plot/rat_dist.html" width="750px" height="530px" frameborder="0" position="relative" id="rat_dist" style="display: block;">rat_dist</iframe>
-        <iframe class="toggle-frame" src="assets/plot/line_rat_year.html" width="750px" height="530px" frameborder="0" position="relative" id="line_rat_year" style="display: none;">line_rat_year</iframe>
+        <iframe class="toggle-frame" src="assets/plot/line_rat_year.html" width="850px" height="530px" frameborder="0" position="relative" id="line_rat_year" style="display: none;">line_rat_year</iframe>
         
         <p>Now that we saw an overview of the ratings, let’s see some other parameters.</p>
         
@@ -304,7 +298,7 @@
         Well, you can always find the answer here! For the most reliable data, for movies from around 60 to 200 minutes of runtime there can be seen a slight 
         but statistically significant increase in the rating as the runtime goes up. 
         It seems either that people like longer movies or if a movie is longer it is most likely to be better! </p>
-        <iframe src="assets/plot/line_rat_runtime.html" width="750px" height="530px" frameborder="0" position="relative">Runtime plot</iframe>
+        <iframe src="assets/plot/line_rat_runtime.html" width="850px" height="530px" frameborder="0" position="relative">Runtime plot</iframe>
 
         <h4 id="Subpart4.2.2">Average age of the cast</h4>
         <p> Let’s now look at something else, the average age of the cast. Do people give higher ratings to movies that employ and cast older people? Or a younger, 
@@ -375,7 +369,7 @@
         As mentioned above, we are using the fraction of female actors in the movie. The naïve analysis shows that that there is a small but significant negative correlation between 
         the female fraction of actors in the movie and the average rating. We can also see again that the female fraction of actors is generally below 0.35. 
         This could be for a lot of reasons, for example people might like genres or that are best suited for male actors, or these genres are more carefully made. </p>
-      <iframe src="assets/plot/line_rat_frac_female.html" width="750px" height="530px" frameborder="0" position="relative">Frac female</iframe>
+      <iframe src="assets/plot/line_rat_frac_female.html" width="850px" height="530px" frameborder="0" position="relative">Frac female</iframe>
 
       <h4 id="Subpart4.1"> Is this really the case?</h4>
       <p>Until now, we were looking at these cases naively and saw that many confounders can affect the average rating of a movie. To make sure that the fraction of female actors affects the average rating, we need to isolate its effect, 
@@ -426,7 +420,7 @@
         </p>
       
       <iframe class="toggle-frame" src="assets/plot/dist_rat_treat_control.html" width="750px" height="530px" frameborder="0" position="relative" id="dist_rat_treat_control" style="display: block;">dist_rat_treat_control</iframe>
-      <iframe class="toggle-frame" src="assets/plot/line_rat_female_matched.html" width="750px" height="530px" frameborder="0" position="relative" id="line_rat_female_matched" style="display: none;">line_rat_female_matched</iframe>
+      <iframe class="toggle-frame" src="assets/plot/line_rat_female_matched.html" width="850px" height="530px" frameborder="0" position="relative" id="line_rat_female_matched" style="display: none;">line_rat_female_matched</iframe>
 
       
     

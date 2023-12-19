@@ -15,7 +15,10 @@
     overflow: hidden;
     text-overflow: ellipsis
 }
-
+.expanded-dropdown-button {
+    width: 150px; /* Set the desired width */
+    /* Add any other styles for the expanded dropdown button */
+  }
 .btn-social>:first-child {
     position: absolute;
     left: 0;
