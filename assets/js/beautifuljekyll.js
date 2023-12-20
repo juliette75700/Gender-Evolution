@@ -31,6 +31,10 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initSearch();
   },
 
+  switchVis: function(chartId) {
+    document.querySelector('iframe').src = 'assets/plot/' + chartId ;
+  },
+
   initNavbar : function() {
     // Set the navbar-dark/light class based on its background color
     const rgb = $('.navbar').css("background-color").replace(/[^\d,]/g,'').split(",");
