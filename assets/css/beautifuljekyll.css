@@ -1070,6 +1070,11 @@ pre {
   color: #777;
 }
 
+iframe {
+  margin-top: 20px;
+  width: 400px;
+}
+
 #search-results-container {
   list-style: none;
   padding-left: unset;

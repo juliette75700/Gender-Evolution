@@ -41,6 +41,8 @@
   <style>#scrollToTopBtn {display: none; position: fixed; bottom: 20px; right: 40px; background-color: #edf1f4; color: #0e0d0d; border: 1px solid #525252; border-radius: 50%;  width: 50px; /* Adjust the width */
     height: 50px; line-height: 50px; cursor: pointer; font-size: 20px}</style>
 
+  <script src="https://juliette75700.github.io/Gender-Evolution/assets/js/beautifuljekyll.js"></script>  
+  <script src="https://juliette75700.github.io/Gender-Evolution/assets/js/simple-jekyll-search.min.js"></script>
 </head>
 
 <body>
@@ -429,6 +431,26 @@
       <iframe class="toggle-frame" src="assets/plot/line_rat_female_matched.html" width="850px" height="530px" frameborder="0" position="relative" id="line_rat_female_matched" style="display: none;">line_rat_female_matched</iframe>
 
       
+      <p>Select the data to visualize:</p>
+      <script src="assets/js/beautifuljekyll.js"></script>  
+      <select onchange="switchVis(this.value)">
+        <option value="dist_rat_treat_control.html">Distribution of the two groups</option>
+        <option value="line_rat_female_matched.html">Average actress fraction over the raiting</option>
+      </select>
+
+      <iframe title="New confirmed COVID–19 cases, deaths &amp;amp; recoveries in Europe, per day" 
+        aria-label="Interactive line chart" id="dist_rat_treat_control" 
+        src="assets/plot/dist_rat_treat_control.html" 
+        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" 
+        height="407">
+      </iframe>
+
+      <script type="text/javascript">!function()
+        {"use strict";window.addEventListener("message",(function(a)
+        {if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"])
+        {var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");
+        t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+      </script>
     
     </div>
     </div>
@@ -460,16 +482,12 @@
         <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <ul class="list-inline text-center footer-links"></ul>
 
-        
         <p class="copyright text-muted">
-        
           Team ADAknow
           &nbsp;&bull;&nbsp;        
           2023
           &nbsp;&bull;&nbsp;
           <a title="Edit this page on GitHub" href="https://github.com/juliette75700/Gender-Evolution" class="text_muted">Edit page</a>
-        
-
         </p>
         
         <p class="theme-by text-muted">
@@ -488,9 +506,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>   
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-      <script src="/ada-project-teambadass/assets/js/beautifuljekyll.js"></script>
 
 </body>
 </html>
