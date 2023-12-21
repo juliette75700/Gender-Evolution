@@ -7,6 +7,8 @@
   
   <title>Gender Evolution</title>
   
+  <script src="https://juliette75700.github.io/Gender-Evolution/assets/js/beautifuljekyll.js"></script>
+
   <meta name="author" content="ADAknow">
   <meta name="description" content="Analysis of gender evolution in the cinema">    
   
@@ -25,7 +27,7 @@
   <meta property="og:url" content="https://juliette75700.github.io/Gender-Evolution/">
   
   <link rel="canonical" href="https://juliette75700.github.io/Gender-Evolution/">
-  <link rel="icon" type="image/png"  href="../assets/img/favicon.png">
+  <link rel="icon" type="image/png"  href="assets/img/favicon.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@">
@@ -119,7 +121,6 @@
   
 
   <div class=" container-md " role="main">
-
     <div class="row">
       <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 "  style="text-align: justify;">
         <p> In this study we take a glance at the problem of gender representation in the world of cinema by exploring comprehensive datasets on movies, tropes and characters in movies. 
@@ -144,7 +145,8 @@
           it was observed a uneven proportion of actresses in absolute number.<br>
           </p>
           <iframe src="assets/plot/Prop_actresses.html" width="750px" height="630px" frameborder="0" position="relative">Proportion gender actor population plot</iframe>
-
+         <p> To understand what this disparity could be due to, we are now going to study how do the tropes influence the gender disparity in the movies.</p>
+<!---
         <h3>This is just a question of the times, right? </h3>
         <p> The hypothesis was brought that the gender disparity could have evolved over the time with 
           the evolution of women's rights and their role in the society. <br>
@@ -177,7 +179,7 @@
           }
         </script>
           
-          <!-- Create the buttons -->
+          
         <p><button class="button" style="margin: 8px 0; width: 20%;
               display: inline-block;
               padding: 7px 10px;
@@ -204,16 +206,14 @@
         </button>
         </p>
           
-        <!-- Create the iframes -->
+        
         <iframe class="toggle-frame" src="assets/plot/Actresses_per_country.html" width="750px" height="590px" frameborder="0" position="relative" id="nationality" style="display: block;">nationality</iframe>
         <iframe class="toggle-frame" src="assets/plot/Actresses_runtime.html" width="750px" height="590px" frameborder="0" position="relative" id="runtime" style="display: none;">runtime</iframe>
         
-        In the end, is the gender disparity really intrinsec to the cinema or does it come from some influences beyond the movies such as the 
-        choice of the tropes? How do the tropes influence the gender disparity in the movies?
-        </p>
+-->
+       
       
         <hr />
-
 
         <h2 id="Part 2">Genderness of tropes</h2>
         <p>As any other popular media, films reflect societal biases and perspectives through the use of tropes. These are narrative elements describing stereotypical characters and plot arcs that are common across movies. Tropes range from classics like 'dumb blonde' and 'the Casanova' to the 'Absent minded professor'. </p>
@@ -243,7 +243,7 @@
         <h3 id="Subpart2.2">The correlation between the nature of tropes and the genderness</h3>
         <p>Add content </p>
         <hr />
-
+<!---
         <h3 id="Subpart4.1">What do people vote?</h3>
         <p>Before diving deep into what influences the ratings, lets see first what people vote in general and how it changed across the years. 
           This can give us some perspective on all the exciting cases that follow. Clearly visualized on the graph that follows, is that most of the votes are between 5-7 rating, 
@@ -269,7 +269,6 @@
           }
         </script>
           
-          <!-- Create the buttons -->
         <p><button class="button" style="margin: 8px 0; width: 20%;
               display: inline-block;
               padding: px 10px;
@@ -311,13 +310,13 @@
         Well, you can always find the answer here! For the most reliable data, for movies from around 60 to 200 minutes of runtime there can be seen a slight 
         but statistically significant increase in the rating as the runtime goes up. 
         It seems either that people like longer movies or if a movie is longer it is most likely to be better! </p>
-        <!-- <iframe src="assets/plot/line_rat_runtime.html" width="850px" height="530px" frameborder="0" position="relative">Runtime plot</iframe> -->
+        <iframe src="assets/plot/line_rat_runtime.html" width="850px" height="530px" frameborder="0" position="relative">Runtime plot</iframe> 
 
         <h4 id="Subpart4.2.2">Average age of the cast</h4>
         <p> Let’s now look at something else, the average age of the cast. Do people give higher ratings to movies that employ and cast older people? Or a younger, 
         more vibrant and livelier cast is the way to go in order to get the people to give a good vote? With one quick look it seems that it does not actually matter.
         Both the Pearson and Spearman correlation statistics give a p-value around 0.5 which can help us reject the null hypothesis that the average age of the cast of the movie and the rating it gets are correlated.</p>
-        <!-- <iframe src="assets/plot/dist_rat_age.html" width="750px" height="530px" frameborder="0" position="relative">Age plot</iframe> -->
+        <iframe src="assets/plot/dist_rat_age.html" width="750px" height="530px" frameborder="0" position="relative">Age plot</iframe> 
 
         <h4 id="Subpart4.2.3">Genres, Languages and Country</h4>
         <p>Let’s continue to some distributions. Below we can see the distributions of the ratings for each genre and for languages and countries of the movies 
@@ -341,7 +340,7 @@
           }
         </script>
           
-          <!-- Create the buttons -->
+          
           <p><button class="button" style="margin: 8px 0; width: 20%;
                     padding: 7px 10px;
                     margin-left: 130px; margin-right: 5px;
@@ -352,15 +351,7 @@
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 500;" onclick="showFrame('bar_rat_genre')">Genre
               </button>
-              <!--<button class="button" style="width: 20%; margin-right: 5px;
-                    padding: 7px 10px;
-                    background-color: #fff; /* White background */
-                    color: #000; /* Black text color */
-                    border: 2px solid #525252; /* Black borders */
-                    border-radius: 4px;
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight: 500;" onclick="showFrame('bar_rat_country')">Country
-              </button> -->
+              
               <button class="button" style="width: 20%;
                     padding: 7px 10px;
                     background-color: #fff; /* White background */
@@ -374,70 +365,92 @@
         
         <iframe class="toggle-frame" src="assets/plot/bar_rat_genre.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_genre" style="display: block;">bar_rat_genre</iframe>
         <iframe class="toggle-frame" src="assets/plot/bar_rat_country.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_country" style="display: none;">bar_rat_country</iframe>
-       <!-- <iframe class="toggle-frame" src="assets/plot/bar_rat_lang.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_lang" style="display: none;">bar_rat_langr</iframe> -->
+        <iframe class="toggle-frame" src="assets/plot/bar_rat_lang.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_lang" style="display: none;">bar_rat_langr</iframe> 
+-->
+        <h3 id="Subpart4.3">The influence of the gender</h3>
+            
+        <p>Finally, it is time to address the elephant in the room, does gender play a role in the ratings that people give to the movies. 
+          As mentioned above, we are using the fraction of female actors in the movie. The naïve analysis shows that that there is a small but significant negative correlation between 
+          the female fraction of actors in the movie and the average rating. We can also see again that the female fraction of actors is generally below 0.35. 
+          This could be for a lot of reasons, for example people might like genres or that are best suited for male actors, or these genres are more carefully made. </p>
+        <iframe src="assets/plot/line_rat_frac_female.html" width="850px" height="530px" frameborder="0" position="relative">Frac female</iframe>
 
-      <h3 id="Subpart4.3">The influence of the gender</h3>
-          
-      <p>Finally, it is time to address the elephant in the room, does gender play a role in the ratings that people give to the movies. 
-        As mentioned above, we are using the fraction of female actors in the movie. The naïve analysis shows that that there is a small but significant negative correlation between 
-        the female fraction of actors in the movie and the average rating. We can also see again that the female fraction of actors is generally below 0.35. 
-        This could be for a lot of reasons, for example people might like genres or that are best suited for male actors, or these genres are more carefully made. </p>
-      <iframe src="assets/plot/line_rat_frac_female.html" width="850px" height="530px" frameborder="0" position="relative">Frac female</iframe>
-
-      <h4 id="Subpart4.1"> Is this really the case?</h4>
-      <p>Until now, we were looking at these cases naively and saw that many confounders can affect the average rating of a movie. To make sure that the fraction of female actors affects the average rating, we need to isolate its effect, 
-        that is we are going to perform a causal analysis. To do that we use a treatment and a control group. The treatment group is defined as the movies that have more female than male actors in their cast, whereas the control group is the opposite. 
-        So, we used propensity score matching for the above confounders that showed some correlation with the average rating. 
-        After matching we can see that the distribution of the average rating between the two groups is very similar, with the treatment group (more females than males in a movie) 
-        having a bit more probability to have around 4.5-7 and the control group a bit more probability above 7. The correlation statistics show a in the end that the fraction of female actors in a movie have little to no correlation to the average rating.
-      </p>
-       
-      <script>
-        function showFrame(frameId) {
-          // Get all iframes with the toggle-frame class
-          var frames = document.getElementsByClassName('toggle-frame');
-        
-          // Hide all iframes with the toggle-frame class
-          for (var i = 0; i < frames.length; i++) {
-            frames[i].style.display = 'none';
-          }
-        
-          // Show the selected iframe
-          var frame = document.getElementById(frameId);
-          frame.style.display = 'block';
-        }
-      </script>
-        
-        <!-- Create the buttons -->
-        <p><button class="button" style="margin: 8px 0; width: 30%;
-                  display: inline-block;
-                  padding: 7px 10px;
-                  margin-left: 130px; margin-right: 5px;
-                  background-color: #fff; /* White background */
-                  color: #000; /* Black text color */
-                  border: 2px solid #525252; /* Black borders */
-                  border-radius: 4px;
-                  font-family: 'Open Sans', sans-serif;
-                  font-weight: 500;" onclick="showFrame('dist_rat_treat_control')">Distribution of the two groups
-            </button>
-            <button class="button" style="margin: 8px 0; width: 40%;
-                  display: inline-block;
-                  padding: 7px 10px;
-                  background-color: #fff; /* White background */
-                  color: #000; /* Black text color */
-                  border: 2px solid #525252; /* Black borders */
-                  border-radius: 4px;
-                  font-family: 'Open Sans', sans-serif;
-                  font-weight: 500;" onclick="showFrame('line_rat_female_matched')"> Average actress fraction over the raiting
-            </button>
+        <h4 id="Subpart4.1"> Is this really the case?</h4>
+        <p>Until now, we were looking at these cases naively and saw that many confounders can affect the average rating of a movie. To make sure that the fraction of female actors affects the average rating, we need to isolate its effect, 
+          that is we are going to perform a causal analysis. To do that we use a treatment and a control group. The treatment group is defined as the movies that have more female than male actors in their cast, whereas the control group is the opposite. 
+          So, we used propensity score matching for the above confounders that showed some correlation with the average rating. 
+          After matching we can see that the distribution of the average rating between the two groups is very similar, with the treatment group (more females than males in a movie) 
+          having a bit more probability to have around 4.5-7 and the control group a bit more probability above 7. The correlation statistics show a in the end that the fraction of female actors in a movie have little to no correlation to the average rating.
         </p>
-      
-      <iframe class="toggle-frame" src="assets/plot/dist_rat_treat_control.html" width="750px" height="530px" frameborder="0" position="relative" id="dist_rat_treat_control" style="display: block;">dist_rat_treat_control</iframe>
-      <iframe class="toggle-frame" src="assets/plot/line_rat_female_matched.html" width="850px" height="530px" frameborder="0" position="relative" id="line_rat_female_matched" style="display: none;">line_rat_female_matched</iframe>
+        
+        <script>
+          function showFrame(frameId) {
+            // Get all iframes with the toggle-frame class
+            var frames = document.getElementsByClassName('toggle-frame');
+          
+            // Hide all iframes with the toggle-frame class
+            for (var i = 0; i < frames.length; i++) {
+              frames[i].style.display = 'none';
+            }
+          
+            // Show the selected iframe
+            var frame = document.getElementById(frameId);
+            frame.style.display = 'block';
+          }
+        </script>
+          
+          <!-- Create the buttons -->
+          <p><button class="button" style="margin: 8px 0; width: 30%;
+                    display: inline-block;
+                    padding: 7px 10px;
+                    margin-left: 130px; margin-right: 5px;
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text color */
+                    border: 2px solid #525252; /* Black borders */
+                    border-radius: 4px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 500;" onclick="showFrame('dist_rat_treat_control')">Distribution of the two groups
+              </button>
+              <button class="button" style="margin: 8px 0; width: 40%;
+                    display: inline-block;
+                    padding: 7px 10px;
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text color */
+                    border: 2px solid #525252; /* Black borders */
+                    border-radius: 4px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 500;" onclick="showFrame('line_rat_female_matched')"> Average actress fraction over the raiting
+              </button>
+          </p>
+        
+        <iframe class="toggle-frame" src="assets/plot/dist_rat_treat_control.html" width="750px" height="530px" frameborder="0" position="relative" id="dist_rat_treat_control" style="display: block;">dist_rat_treat_control</iframe>
+        <iframe class="toggle-frame" src="assets/plot/line_rat_female_matched.html" width="850px" height="530px" frameborder="0" position="relative" id="line_rat_female_matched" style="display: none;">line_rat_female_matched</iframe>
 
+
+        <!--Try function from js
+        <script>
+          function switchVis(chartId) {
+            document.querySelector('iframe').src = 'assets/plot/' + chartId + '.html' ;
+            console.log("Switching to:", chartId);
+          }
+        </script>
+
+        <select onchange="switchVis(this.value)">
+          <option value="dist_rat_treat_control">Distribution of the two groups</option>
+          <option value="line_rat_female_matched">Average actress fraction over the raiting</option>
+        </select>
+        
+        <iframe title="New confirmed COVID–19 cases, deaths &amp;amp; recoveries in Europe, per day" aria-label="Interactive line chart" 
+        id="datawrapper-chart-vq9AT" src="assets/plot/dist_rat_treat_control.html" scrolling="no" frameborder="0" style="width: 0; 
+        min-width: 100% !important; border: none;" height="407"></iframe>
+
+        <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a)
+        {if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");
+        t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+        </script> 
+        -->
       
-    
-    </div>
+      </div>
     </div>
   </div>
 
@@ -461,6 +474,11 @@
         }
       };
     </script>
+
+
+    </script>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
 
     <div class="container-md beautiful-jekyll-footer">
       <div class="row">
@@ -496,8 +514,8 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>   
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-      <script src="/ada-project-teambadass/assets/js/beautifuljekyll.js"></script>
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! 
+      <script src="/ada-project-teambadass/assets/js/beautifuljekyll.js"></script>-->
 
 </body>
 </html>
