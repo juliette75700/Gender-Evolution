@@ -38,9 +38,13 @@
   <meta http-equiv='expires' content='0'> 
   <meta http-equiv='pragma' content='no-cache'>
 
+  <style>#scrollToTopBtn {display: none; position: fixed; bottom: 20px; right: 40px; background-color: #edf1f4; color: #0e0d0d; border: 1px solid #525252; border-radius: 50%;  width: 50px; /* Adjust the width */
+    height: 50px; line-height: 50px; cursor: pointer; font-size: 20px}</style>
+
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular">
     <a class="navbar-brand" href="https://juliette75700.github.io/Gender-Evolution">Evolution of gender roles in film across the decades</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,8 +116,10 @@
     </div>
    
   </header>
+  
 
   <div class=" container-md " role="main">
+
     <div class="row">
       <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 "  style="text-align: justify;">
         <p> In this study we take a glance at the problem of gender representation in the world of cinema by exploring comprehensive datasets on movies, tropes and characters in movies. 
@@ -305,13 +311,13 @@
         Well, you can always find the answer here! For the most reliable data, for movies from around 60 to 200 minutes of runtime there can be seen a slight 
         but statistically significant increase in the rating as the runtime goes up. 
         It seems either that people like longer movies or if a movie is longer it is most likely to be better! </p>
-        <iframe src="assets/plot/line_rat_runtime.html" width="850px" height="530px" frameborder="0" position="relative">Runtime plot</iframe>
+        <!-- <iframe src="assets/plot/line_rat_runtime.html" width="850px" height="530px" frameborder="0" position="relative">Runtime plot</iframe> -->
 
         <h4 id="Subpart4.2.2">Average age of the cast</h4>
         <p> Let’s now look at something else, the average age of the cast. Do people give higher ratings to movies that employ and cast older people? Or a younger, 
         more vibrant and livelier cast is the way to go in order to get the people to give a good vote? With one quick look it seems that it does not actually matter.
         Both the Pearson and Spearman correlation statistics give a p-value around 0.5 which can help us reject the null hypothesis that the average age of the cast of the movie and the rating it gets are correlated.</p>
-        <iframe src="assets/plot/dist_rat_age.html" width="750px" height="530px" frameborder="0" position="relative">Age plot</iframe>
+        <!-- <iframe src="assets/plot/dist_rat_age.html" width="750px" height="530px" frameborder="0" position="relative">Age plot</iframe> -->
 
         <h4 id="Subpart4.2.3">Genres, Languages and Country</h4>
         <p>Let’s continue to some distributions. Below we can see the distributions of the ratings for each genre and for languages and countries of the movies 
@@ -346,7 +352,7 @@
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 500;" onclick="showFrame('bar_rat_genre')">Genre
               </button>
-              <button class="button" style="width: 20%; margin-right: 5px;
+              <!--<button class="button" style="width: 20%; margin-right: 5px;
                     padding: 7px 10px;
                     background-color: #fff; /* White background */
                     color: #000; /* Black text color */
@@ -354,7 +360,7 @@
                     border-radius: 4px;
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 500;" onclick="showFrame('bar_rat_country')">Country
-              </button>
+              </button> -->
               <button class="button" style="width: 20%;
                     padding: 7px 10px;
                     background-color: #fff; /* White background */
@@ -368,7 +374,7 @@
         
         <iframe class="toggle-frame" src="assets/plot/bar_rat_genre.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_genre" style="display: block;">bar_rat_genre</iframe>
         <iframe class="toggle-frame" src="assets/plot/bar_rat_country.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_country" style="display: none;">bar_rat_country</iframe>
-        <iframe class="toggle-frame" src="assets/plot/bar_rat_lang.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_lang" style="display: none;">bar_rat_langr</iframe>
+       <!-- <iframe class="toggle-frame" src="assets/plot/bar_rat_lang.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_lang" style="display: none;">bar_rat_langr</iframe> -->
 
       <h3 id="Subpart4.3">The influence of the gender</h3>
           
@@ -437,6 +443,25 @@
 
 
   <footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script>
+      // Function to scroll to the top of the page
+      function scrollToTop() {
+        document.body.scrollTop = 0;  // For Safari
+        document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE, and Opera
+      }
+
+      // Show/hide the scroll to top button based on scroll position
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scrollToTopBtn").style.display = "block";
+        } else {
+          document.getElementById("scrollToTopBtn").style.display = "none";
+        }
+      };
+    </script>
+
     <div class="container-md beautiful-jekyll-footer">
       <div class="row">
         <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
@@ -453,6 +478,7 @@
         
 
         </p>
+        
         <p class="theme-by text-muted">
           Powered by
           <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
