@@ -237,7 +237,47 @@
           Our results revealed an interesting set of patterns: 
         </p>
         <p>
-          <b>Female Themes</b>: Our analysis showed that tropes classified as female fall under one of two categories: "Apparance and Styling" or "Family" with significant emphasis on themes of relationships, motherhood, and physical attributes. In fact the most probable category female tropes fall under is that of "Family":
+          <b>Female Themes:</b> Our analysis showed that tropes classified as female fall under one of two categories: "Apparance and Styling" or "Family" with significant emphasis on themes of relationships, motherhood, and physical attributes. In fact the most probable category female tropes fall under is that of "Family":
+          [INCLUDE GRAPHIC HERE]
+        </p>
+        <p>
+          This analysis presented us with an indication of bias as it suggested that perhaps female characters may be primarily represented through their relationships with others and in particular through family bonds. 
+          The prevalence of the "Appearance and Styling" them also made us think whether such tropes could limit womens' representation in film.
+        </p>
+        <p>
+          <b>Male Themes:</b> The topics identified to describe our male tropes were made up of a "General/Miscellaneous" category including non-specific, diverse terms and an "Action and Adventure" category containing words related to superhero and fantasy films as well as war and action. Although the general/miscellaneous theme may not seem highly coherent and interpretable, the number of topics was not changed as it resulted in stable and reproducible LDA results.
+        </p>
+        <p>
+          The more general nature of the dominant topic in male tropes may suggest a wider diversity of roles attributed to male characters. At the same time, the action and adventure theme may indicate an association of male characters with action-packed, adventurous, and powerful roles.
+          Although we identified trends that may reveal an aspect of gender bias in the film industry, we had to ask ourselves: are these results significant?
+        </p>
+
+        <div style="text-align: center;">
+          <iframe src="https://giphy.com/embed/Q7pytHHaVKGrSzhkpE" width="240" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+
+        <p>
+          In reality the vast majority of our tropes in the corpus have been classified as unisex by our model:
+          [INCLUDE GRAPHIC HERE]
+        </p>
+        <p>
+          In fact, looking at the proportions of tropes representing the top 10 most frequent genres across our movies we notice that unisex tropes make up more than 85% of tropes across all genres:
+          [INCLUDE GRAPHIC HERE]
+        </p>
+        
+        <p>
+          Indeed our model was limited by its simplicity and the inherent uncertainty of our score discretisation to gender labels. Due to this, certain tropes may fall in a class that does not accurately represent them. More specifically, although we aimed to discretise our genderedness scores by maximising the overall f1 score in the classification process, the result produces a relatively low precision for unisex (0.41) and male tropes (0.63).
+
+          At the same time, as we did not distinguish between tropes tropes that refer to entire movie plots and those that concern specific characters, drawing conclusions about gender becomes even more challenging.
+        </p>
+
+        <p>
+          Hence, it is suggested that should this project be revisited, a more sophisticated approach to trope classification should be used. This could involve the use of a more reliable machine learning classification algorithm. Future work should focus on properly classifying the tropes are character specific or movie specific as well as identifying the characters they refer to and their sex. This would allow an analysis of a smaller and potentially more informative subset of tropes from which direct and more robust conclusions about gender bias in film could be drawn. A clustering algorithm could then be trained to more effectively associate character tropes to their 'gender'.
+        </p>
+
+        <h4>So are movie tropes free of gender bias?</h4>
+        <p>
+          Are we witnessing the end of gender bias in cinema? Not quite. Despite the prevalence of unisex tropes, the nuances of gender representation are still skewed. Our subsequent survival analysis on actors' careers further underscores this, revealing stark disparities in career longevity between male and female actors.
         </p>
         <h3 id="Subpart2.1"> The representation of gendred tropes: </h3>
         <hr/>
