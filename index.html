@@ -232,13 +232,17 @@
         <p>
           Having assigned each trope to a class (male, female or unisex), we asked ourselves: what stories are these gendered tropes telling? To answer this, we conducted a Latent Dirichlet Allocation (LDA) analysis on all our tropes to identify the most prevalent themes among them.
         </p>
+        <iframe src="assets/plot/female_lda_visualization.html" width="750px" height="630px" frameborder="0" position="relative">Female LDA</iframe>
+        <p></p>
+        <iframe src="assets/plot/male_lda_visualization.html" width="750px" height="630px" frameborder="0" position="relative">Male LDA</iframe>
         <p>
           Our results revealed an interesting set of patterns: 
         </p>
         <p>
           <b>Female Themes:</b> Our analysis showed that tropes classified as female fall under one of two categories: "Apparance and Styling" or "Family" with significant emphasis on themes of relationships, motherhood, and physical attributes. In fact the most probable category female tropes fall under is that of "Family":
-          [INCLUDE GRAPHIC HERE]
+        
         </p>
+        <iframe src="assets/plot/female_boxplot.html" width="750px" height="630px" frameborder="0" position="relative">Distribution of Topic Probabiliies Across Female Gendered Tropes</iframe>
         <p>
           This analysis presented us with an indication of bias as it suggested that perhaps female characters may be primarily represented through their relationships with others and in particular through family bonds. 
           The prevalence of the "Appearance and Styling" them also made us think whether such tropes could limit womens' representation in film.
@@ -246,6 +250,7 @@
         <p>
           <b>Male Themes:</b> The topics identified to describe our male tropes were made up of a "General/Miscellaneous" category including non-specific, diverse terms and an "Action and Adventure" category containing words related to superhero and fantasy films as well as war and action. Although the general/miscellaneous theme may not seem highly coherent and interpretable, the number of topics was not changed as it resulted in stable and reproducible LDA results.
         </p>
+        <iframe src="assets/plot/male_boxplot.html" width="750px" height="630px" frameborder="0" position="relative">Distribution of Topic Probabiliies Across Male Gendered Tropes</iframe>
         <p>
           The more general nature of the dominant topic in male tropes may suggest a wider diversity of roles attributed to male characters. At the same time, the action and adventure theme may indicate an association of male characters with action-packed, adventurous, and powerful roles.
           Although we identified trends that may reveal an aspect of gender bias in the film industry, we had to ask ourselves: are these results significant?
@@ -257,13 +262,13 @@
 
         <p>
           In reality the vast majority of our tropes in the corpus have been classified as unisex by our model:
-          [INCLUDE GRAPHIC HERE]
         </p>
+        <iframe src="assets/plot/trop_dist.html" width="750px" height="630px" frameborder="0" position="relative">Distribution of Genderedness Scores in corpus</iframe>
         <p>
           In fact, looking at the proportions of tropes representing the top 10 most frequent genres across our movies we notice that unisex tropes make up more than 85% of tropes across all genres:
-          [INCLUDE GRAPHIC HERE]
-        </p>
         
+        </p>
+        <iframe src="assets/plot/genre_tropes.html" width="750px" height="630px" frameborder="0" position="relative">Distribution of Tropes Across Top 10 Movie Genres</iframe>
         <p>
           Indeed our model was limited by its simplicity and the inherent uncertainty of our score discretisation to gender labels. Due to this, certain tropes may fall in a class that does not accurately represent them. More specifically, although we aimed to discretise our genderedness scores by maximising the overall f1 score in the classification process, the result produces a relatively low precision for unisex (0.41) and male tropes (0.63).
 
@@ -278,8 +283,24 @@
         <p>
           Are we witnessing the end of gender bias in cinema? Not quite. Despite the prevalence of unisex tropes, the nuances of gender representation are still skewed. Our subsequent survival analysis on actors' careers further underscores this, revealing stark disparities in career longevity between male and female actors.
         </p>
-        <h3 id="Subpart2.1"> The representation of gendred tropes: </h3>
-        <hr/>
+        <hr />
+        <h2> Career Longevity in Cinema: A Survival Analysis Perspective </h2>
+        <p>
+          Let's take a step back and look at the big picture — how long do actors stay in the spotlight, and does it differ for men and women? Our investigation peeks behind the curtain to reveal the ebb and flow of acting careers through the lens of gender.
+          Imagine a snapshot showing the length of actors' careers with two colors: one for men and one for women. What we see is that men generally have a slightly longer stay in the world of cinema. But it's not just about who stays longer; it's about the range of career lengths. Men's careers seem to have more variation — some have brief cameos while others enjoy enduring lead roles.
+          [INCLUDE GRAPHIC HERE]
+        </p>
+
+        <p>
+          Now, think of a line that climbs a hill. This line represents the chance of an actor continuing to work over the years. We drew two lines — one for men and one for women. These lines show us a clear difference: the chances of continuing an acting career indeed vary by gender. And this isn't just a guess; the numbers are strong enough to say it's a fact.
+        </p>
+
+        <h4>🎬 Does Gender Steer the Story? 🎬</h4>
+        <p>
+          While numbers don't lie, they don't tell the whole story either. They don't say who will have the longest career or why. But they do suggest a pattern — one that we see when we look at who's still active in films and who's not.
+          In our story, 'active' means having been in a movie in the last ten years. Those who have, take the stage as our 'non-censored' actors. They're the majority, showing that many actors' stories are still being written.
+          What if we could play detective and guess an actor's gender just by looking at their career details? Given the patterns we've seen, it seems possible. Could the length of an actor's career, the roles they play, and their activity give us clues?
+        </p>
 
         <h3 id="Subpart2.1.1">Accross the genres</h3>
         <p>Add content </p>
