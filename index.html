@@ -145,7 +145,7 @@
           it was observed a uneven proportion of actresses in absolute number.<br>
           </p>
           <div style="text-align: center;">
-            <iframe src="assets/plot/Prop_actresses.html" width="550px" height="550px" frameborder="0" style="position: relative;">Proportion gender actor population plot</iframe>
+            <iframe src="assets/plot/gender_distribution_pie_chart.html" width="550px" height="550px" frameborder="0" style="position: relative;">Proportion gender actor population plot</iframe>
         </div>
           <p>
             What's behind this imbalance? To find answers, we're exploring the world of movie tropes. Could it be that the types of characters they're cast as — the heroes, the villains, the sidekicks — play a part in this disparity?
@@ -222,10 +222,10 @@
       
         <hr />
 
-        <h2 id="Part 2">Genderedness of tropes</h2>
+        <h2 id="Part 2" style="text-align: center;">Genderedness of tropes</h2>
         <p>As any other popular media, films reflect societal biases and perspectives through the use of tropes. These are narrative elements describing stereotypical characters and plot arcs that are common across movies. Tropes range from classics like 'dumb blonde' and 'the Casanova' to the 'Absent minded professor'. </p>
         <div style="text-align: center;">
-          <iframe src="https://giphy.com/embed/L4TTcR1mS8a5955TQY" width="240" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/L4TTcR1mS8a5955TQY" width="360" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
       
         <p>
@@ -268,7 +268,7 @@
         </p>
 
         <div style="text-align: center;">
-          <iframe src="https://giphy.com/embed/Q7pytHHaVKGrSzhkpE" width="240" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/Q7pytHHaVKGrSzhkpE" width="360" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
 
         <p>
@@ -302,7 +302,7 @@
           Imagine a snapshot showing the length of actors' careers with two colors: one for men and one for women. What we see is that men generally have a slightly longer stay in the world of cinema. But it's not just about who stays longer; it's about the range of career lengths. Men's careers seem to have more variation — some have brief cameos while others enjoy enduring lead roles.
           
         </p>
-      <iframe src="assets/plot/boxplot_mf.html" width="750px" height="630px" frameborder="0" position="relative">Proportion gender actor population plot</iframe>
+      <iframe src="assets/plot/boxplot_mf.html" width="750px" height="650px" frameborder="0" position="relative">Proportion gender actor population plot</iframe>
         <p>
           Now, think of a line that climbs a hill. This line represents the chance of an actor continuing to work over the years. We drew two lines — one for men and one for women. These lines show us a clear difference: the chances of continuing an acting career indeed vary by gender. And this isn't just a guess; the numbers are strong enough to say it's a fact.
         </p>
@@ -317,18 +317,24 @@
         <p>
           What if we could play detective and guess an actor's gender just by looking at their career details? Given the patterns we've seen, it seems possible. Could the length of an actor's career, the roles they play, and their activity give us clues?
         </p>
+        <p>
+          We took on the challenge of guessing actor's genders based on parameters such as the number of movies they played in, their height or their most recurrent movie genre. Our quest yielded average results — a 66% accuracy across four different models. This is a starting point, but it suggests room for improvement. Perhaps there are confounders we haven't considered or aspects of the data that need refining. 
+          One technical hurdle we faced was the abundance of categorical data, which required one-hot encoding to fit into our models. This process can dilute the potency of certain data types when it comes to classification tasks. It's possible that this impacted our models' ability to predict accurately. 
+        </p>
+      <!--
         <h3 id="Subpart2.1.1">Accross the genres</h3>
         <p>Add content </p>
-      <!--
+      
         <iframe src="assets/plot/" width="750px" height="530px" frameborder="0" position="relative">Some plot</iframe>
-      -->
+      
       <hr />
         <h4 id="Subpar21.1.2">Over the decades</h4>
         <p>Add content</p>
         
         <h3 id="Subpart2.2">The correlation between the nature of tropes and the genderedness</h3>
         <p>Add content </p>
-        <hr />
+        <hr /> 
+      -->
 <!---
         <h3 id="Subpart4.1">What do people vote?</h3>
         <p>Before diving deep into what influences the ratings, lets see first what people vote in general and how it changed across the years. 
@@ -453,7 +459,9 @@
         <iframe class="toggle-frame" src="assets/plot/bar_rat_country.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_country" style="display: none;">bar_rat_country</iframe>
         <iframe class="toggle-frame" src="assets/plot/bar_rat_lang.html" width="750px" height="530px" frameborder="0" position="relative" id="bar_rat_lang" style="display: none;">bar_rat_langr</iframe> 
 -->
-        <h3 id="Subpart4.3">The influence of the gender</h3>
+
+        <hr />
+        <h3 id="Subpart4.3" style="text-align: center;">The influence of the gender</h3>
             
         <p>Finally, it is time to address the elephant in the room, does gender play a role in the ratings that people give to the movies. 
           As mentioned above, we are using the fraction of female actors in the movie. The naïve analysis shows that that there is a small but significant negative correlation between 
