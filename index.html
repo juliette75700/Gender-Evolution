@@ -468,11 +468,43 @@
           So finally, it is time to address the elephant in the room, does gender play a role in the ratings that people give to the movies. 
           To find if that is the case, we are again using the fraction of female actors in the movie and how that influences the rating. The naïve analysis conducted shows that that there is a small but significant negative correlation between 
           the female fraction of actors in the movie and the average rating. We can also see again that the female fraction of actors is generally below 0.35. 
+          <iframe src="assets/plot/line_rat_frac_female.html" width="850px" height="530px" frameborder="0" position="relative">Frac female</iframe>
           This could be for a lot of reasons, for example people might like genres or that are best suited for male actors, or these genres are more carefully made. 
           Since we all know that different aspects of the movie can influence the rating we give to them, we also conducted a naive analysis between different movie characteristics to find what could be the most probable influencers.
           This analysis showed that possible confounders could be the movie runtime, the year the movie was released, the genre of the movie, the language of the movie, even the number of votes.
           On the other hand characteristics tested like the average age of the cast of the movie didn't show a significant correlation with the movie rating.</p>
-        <iframe src="assets/plot/line_rat_frac_female.html" width="850px" height="530px" frameborder="0" position="relative">Frac female</iframe>
+          <table>
+            <tr>
+              <th>Characteristic</th>
+              <th>Spearman Correlation</th>
+              <th>p-value</th>
+            </tr>
+            <tr>
+              <td>Female Fraction</td>
+              <td>-0.40</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Average age</td>
+              <td>0.04</td>
+              <td>0.72</td>
+            </tr>
+            <tr>
+              <td>Runtime</td>
+              <td>0.47</td>
+              <td>0.00</td>
+            </tr>
+             <tr>
+              <td>Release year</td>
+              <td>-0.78</td>
+              <td>0.00</td>
+            </tr>
+             <tr>
+              <td>Number of votes</td>
+              <td>0.22</td>
+              <td>0.00</td>
+            </tr>
+          </table>
 
         <h4 id="Subpart4.1"> Is this really the case?</h4>
         <p>Until now, we were looking at these cases naively and saw that many confounders can affect the average rating of a movie. To make sure that the fraction of female actors affects the average rating, we need to isolate its effect, 
